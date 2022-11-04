@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Outfit:wght@400;600&display=swap');
+
 .container {
-  padding: 0 2rem;
+  font-family: 'Outfit', sans-serif;
 }
 
 .main {
@@ -8,15 +10,6 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
 }
