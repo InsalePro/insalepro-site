@@ -1,9 +1,10 @@
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 5rem;
-    background: rgb(15, 15, 15);
+    background: var(--navbar-bgColor);
 }
 .headerNav {
     margin-top: 10rem;
@@ -19,6 +20,8 @@
 .navLinksContainer {
     display: flex;
     flex-direction: column !important;
+    transform: translateX(100%);
+    background-color: var(--navbar-bgColor);
 }
 .navLink {
     padding: .75rem 1.5rem;
@@ -40,11 +43,9 @@
     .navLinksContainer {
         margin-top: 0;
         flex-direction: row !important;
+        transform: translateX(0);
     }
     .menuIcon {
         display: none;
-    }
-    .navLinksContainer {
-        transform: translateX(0);
     }
 }

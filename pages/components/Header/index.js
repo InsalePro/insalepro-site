@@ -1,27 +1,31 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import styles from '../Header/style.module.css';
+import styles from '../Header/styles.module.css';
 import logo1 from '../../../public/images/logo1.png';
 import menuIcon from '../Header/icons/menu.svg';
 import { useEffect, useRef, useState } from 'react';
 
 const Header = () => {
   const [displayMenu, setDisplayMenu] = useState(false);
-  const navLinksContainerRef = useRef(null);
-  const menuIconRef = useRef(null);
 
-  // const displayMenuHandle = () => setDisplayMenu( !displayMenu );
+  const displayMenuHandle = () => setDisplayMenu( !displayMenu );
 
-  // useEffect: Giving an error at using the 'ref'. Tomorrow i'll fix it
-  // useEffect( () => {
-  //     if ( !displayMenu ) {
-  //         menuIconRef.current.style.transform = "rotate(90deg)";
-  //         navLinksContainerRef.current.style.transform = "translateX(0)";
-  //     } else {
-  //         navLinksContainerRef.current.style.transform = "translateX(100)"
-  //     }
-  // }, [ displayMenu ] )
+  useEffect( () => {
+      const menuIconRef = document.querySelector("#menu-icon");
+      const navLinksContainerRef = document.querySelector("#nav-links-container");
+
+      if (window.innerWidth <= 757) {
+          if ( !displayMenu ) {
+              menuIconRef.style.transform = "rotate(0)";
+              navLinksContainerRef.style.transform = "translateX(100%)";
+          } else {
+              menuIconRef.style.transform = "rotate(45deg)";
+              navLinksContainerRef.style.transform = "translateX(0)"
+          }
+      }
+      
+  }, [ displayMenu ] )
 
   return (
     <header id='header' className={styles.header}>
@@ -30,11 +34,11 @@ const Header = () => {
         <Image
           src={menuIcon}
           alt='Menu'
-          ref={menuIconRef}
+          id="menu-icon"
           className={styles.menuIcon}
           onClick={() => displayMenuHandle()}
         />
-        <div ref={navLinksContainerRef} className={styles.navLinksContainer}>
+        <div id="nav-links-container" className={styles.navLinksContainer}>
           <Link href='#about-insalepro' className={styles.navLink}>
             A InsalePRO
           </Link>

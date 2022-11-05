@@ -1,6 +1,8 @@
 :root {
+    --navbar-bgColor: rgb(15, 15, 15);
+
     --green: #2EE55C;
-    --darker-green: #166f2d;
+    --darker-green: #1d913c;
 }
 
 html,
@@ -10,6 +12,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: #000;
+  overflow-x: hidden;
 }
 
 a {
@@ -21,33 +24,14 @@ a {
   box-sizing: border-box;
 }
 
-/* Header */
-/* #header {
-  padding: 0 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 5rem;
-  background: rgb(15, 15, 15);
-}
-#header nav {
-  display: flex;
-  align-items: center;
-}
-#header nav a {
-  color: #FFF;
-}
-#header nav a:hover {
-    background: rgb(30, 30, 30);
-}
-#nav-contact-button:hover {
-    background-color: var(--darker-green) !important;
-} */
+/*** COMPONENTS ***/
 
 /* Buttons */
 .button {
+    border: none;
     border-radius: 6px;
     padding: .75rem 1.5rem;
+    cursor: pointer;
 }
 .high-emphasis-button {
     background-color: var(--green);
