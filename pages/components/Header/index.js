@@ -9,23 +9,22 @@ import { useEffect, useRef, useState } from 'react';
 const Header = () => {
   const [displayMenu, setDisplayMenu] = useState(false);
 
-  const displayMenuHandle = () => setDisplayMenu( !displayMenu );
+  const displayMenuHandle = () => setDisplayMenu(!displayMenu);
 
-  useEffect( () => {
-      const menuIconRef = document.querySelector("#menu-icon");
-      const navLinksContainerRef = document.querySelector("#nav-links-container");
+  useEffect(() => {
+    const menuIconRef = document.querySelector('#menu-icon');
+    const navLinksContainerRef = document.querySelector('#nav-links-container');
 
-      if (window.innerWidth <= 757) {
-          if ( !displayMenu ) {
-              menuIconRef.style.transform = "rotate(0)";
-              navLinksContainerRef.style.transform = "translateX(100%)";
-          } else {
-              menuIconRef.style.transform = "rotate(45deg)";
-              navLinksContainerRef.style.transform = "translateX(0)"
-          }
+    if (window.innerWidth <= 757) {
+      if (!displayMenu) {
+        menuIconRef.style.transform = 'rotate(0)';
+        navLinksContainerRef.style.transform = 'translateX(100%)';
+      } else {
+        menuIconRef.style.transform = 'rotate(45deg)';
+        navLinksContainerRef.style.transform = 'translateX(0)';
       }
-      
-  }, [ displayMenu ] )
+    }
+  }, [displayMenu]);
 
   return (
     <header id='header' className={styles.header}>
@@ -34,11 +33,11 @@ const Header = () => {
         <Image
           src={menuIcon}
           alt='Menu'
-          id="menu-icon"
+          id='menu-icon'
           className={styles.menuIcon}
           onClick={() => displayMenuHandle()}
         />
-        <div id="nav-links-container" className={styles.navLinksContainer}>
+        <div id='nav-links-container' className={styles.navLinksContainer}>
           <Link href='#about-insalepro' className={styles.navLink}>
             A InsalePRO
           </Link>
