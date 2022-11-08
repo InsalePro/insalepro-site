@@ -43,16 +43,16 @@
   height: 94vh;
 }
 .mainIntroductionMessageImage1 {  
-  right: 22%;
+  right: 20%;
 }
 .mainIntroductionMessageImage2 {  
-  right: 2.1%;
+  right: 0;
   z-index: 1;
 }
 
 @media (min-width: 1020px) {
   .mainIntroduction {
-    margin: 0 2rem;
+    margin: 0  0 0 2rem;
     margin-top: -4rem;
     flex-direction: row;
     height: 100vh;
