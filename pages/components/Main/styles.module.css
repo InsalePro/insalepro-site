@@ -1,3 +1,4 @@
+/* Introduction */
 .mainIntroduction {
   margin-bottom: 2rem;
 }
@@ -11,6 +12,8 @@
 
 .mainIntroductionMessage {
   margin: auto 0.5rem 2rem 0.5rem;
+  height: 65%;
+  max-width: 60%;
 }
 
 .mainIntroductionMessageText {
@@ -23,14 +26,28 @@
 .image {
   margin: 0 auto;
   margin-top: 3rem;
-  max-width: 90%;
   height: auto;
+  max-height: 80%;
+  max-width: 90%;
+  z-index: 1;
 }
 
-.introductionDrawingDiv {
-  font-size: 50rem;
-  color: var(--navbar-bgColor);
-  position: fixed;
+.introductionArrowsContainer {
+  display: none;
+}
+.mainIntroductionMessageImage1, .mainIntroductionMessageImage2 {
+  max-width: 15rem;
+  height: auto;
+  position: absolute;
+  top: 5rem;
+  height: 94vh;
+}
+.mainIntroductionMessageImage1 {  
+  right: 22%;
+}
+.mainIntroductionMessageImage2 {  
+  right: 2.1%;
+  z-index: 1;
 }
 
 @media (min-width: 1020px) {
@@ -44,4 +61,21 @@
     margin-top: 0;
     justify-content: flex-start;
   }
+  .image {
+      width: 40%;
+  }
+  .introductionArrowsContainer {
+      display: flex;
+  }
+}
+
+/* WhoWeAre */
+.whoWeAre {
+  color: #FFF;
+  text-align: center;
+  max-width: 35rem;
+  position: relative;
+  top: -2rem;
+  left: 33VW;
+  z-index: 1;
 }
