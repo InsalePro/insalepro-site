@@ -17,16 +17,16 @@ function Footer() {
           <h2>Navegação</h2>
           <ul>
             <li>
-              <a href='#'> A Insale Pro</a>
+              <Link href='#'> A Insale Pro</Link>
             </li>
             <li>
-              <a href='#'>Máquina de Vendas</a>
+              <Link href='#'>Máquina de Vendas</Link>
             </li>
             <li>
-              <a href='#'>Bitrix24</a>
+              <Link href='#'>Bitrix24</Link>
             </li>
             <li>
-              <a href='#'>Contato</a>
+              <Link href='#'>Contato</Link>
             </li>
           </ul>
         </div>
@@ -43,10 +43,10 @@ function Footer() {
           <h2> Nossas Redes</h2>
           <ul>
             <li>
-              <a href='#'>Facebook</a>
+              <Link href='#'>Facebook</Link>
             </li>
             <li>
-              <a href='#'>Linkedin</a>
+              <Link href='#'>Linkedin</Link>
             </li>
           </ul>
         </div>
