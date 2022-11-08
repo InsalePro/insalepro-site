@@ -11,9 +11,46 @@ function Footer() {
       <div className={styles.logo}>
         <Image src={logo} alt='logo 2' />
       </div>
-      <div className={styles.navigation}>Navegação</div>
-      <div className={styles.contact}>Contato</div>
-      <div className={styles.networks}>Nossas Redes</div>
+
+      <div className={styles.content}>
+        <div className={styles.navigation}>
+          <h2>Navegação</h2>
+          <ul>
+            <li>
+              <a href='#teste'> A Insale Pro</a>
+            </li>
+            <li>
+              <a>Máquina de Vendas</a>
+            </li>
+            <li>
+              <a>Bitrix24</a>
+            </li>
+            <li>
+              <a>Contato</a>
+            </li>
+          </ul>
+        </div>
+
+        <div className={styles.contact}>
+          <h2>Contato</h2>
+          <ul>
+            <li>(12) 97403-0277</li>
+            <li>contato@insalepro.com</li>
+          </ul>
+        </div>
+
+        <div className={styles.networks}>
+          <h2> Nossas Redes</h2>
+          <ul>
+            <li>
+              <a>Facebook</a>
+            </li>
+            <li>
+              <a>Linkedin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
   );
 }

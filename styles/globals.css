@@ -1,8 +1,9 @@
 :root {
-    --navbar-bgColor: rgb(15, 15, 15);
+  --navbar-bgColor: rgb(15, 15, 15);
 
-    --green: #2EE55C;
-    --darker-green: #1d913c;
+  --green: #2ee55c;
+  --darker-green: #1d913c;
+  --purple-blue: #192cff;
 }
 
 html,
@@ -28,18 +29,17 @@ a {
 
 /* Buttons */
 .button {
-    border: none;
-    border-radius: 6px;
-    padding: .75rem 1.5rem;
-    cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
 }
 .high-emphasis-button {
-    background-color: var(--green);
+  background-color: var(--green);
 }
 .high-emphasis-button:hover {
   background-color: var(--darker-green);
 }
-
 
 @media (prefers-color-scheme: dark) {
   html {
