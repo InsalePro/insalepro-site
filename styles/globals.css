@@ -25,6 +25,14 @@ a {
   box-sizing: border-box;
 }
 
+/* General classes */
+.justify-self-end {
+    justify-self: flex-end;
+}
+.justify-self-end {
+    align-self: flex-end;
+}
+
 /*** COMPONENTS ***/
 
 /* Buttons */
