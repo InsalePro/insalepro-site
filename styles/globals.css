@@ -32,6 +32,9 @@ a {
 .justify-self-end {
     align-self: flex-end;
 }
+.m-l-15 {
+    margin-left: 15rem;
+}
 
 /*** COMPONENTS ***/
 

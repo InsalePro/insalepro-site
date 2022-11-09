@@ -1,4 +1,8 @@
 /* Introduction */
+.main {
+    display: flex;
+    flex-direction: column;
+}
 .mainIntroduction {
   margin-bottom: 2rem;
 }
@@ -111,12 +115,14 @@
     align-items: center;
 }
 .ourObjectiveImage {
-    max-width: 90%;
+    width: 90%;
+    max-width: 700px;
     height: auto;
 }
 .ourObjectiveTextContainer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -125,14 +131,35 @@
     color: #FFF;
 }
 .ourObjectiveExplanationParagraph {
-    font-size: 2.5rem; 
+    font-size: 3rem; 
+    font-weight: bold;
+    text-align: center;
 }
-@media (min-width: 1020px) {
+@media (min-width: 1500px) {
     .ourObjectiveContainer {
-        flex-direction: row;
+      flex-direction: row;
     }
+    
     .ourObjectiveExplanationParagraph, .ourObjectiveAndOurStrategyParagraph {
-        max-width: 40%;
+        max-width: 50%;
         text-align: end; 
     }
+    .ourObjectiveExplanationParagraph {
+        margin-bottom: 1.5rem;
+    }
+    
+    .ourObjectiveTextContainer {
+        margin-top: -8rem;
+    }
+    .ourObjectiveContactButton {
+      margin-left: 15rem;
+    }
+}
+
+/* Our RocketStrategy */
+.ourRocketStrategyImage {
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
 }
