@@ -12,7 +12,7 @@ const OurObjective = () => {
                 <p className={styles.ourObjectiveExplanationParagraph}>
                     NOSSO OBJETIVO É TE TORNAR UMA MÁQUINA DE VENDAS
                 </p>
-                <button className={"button high-emphasis-button " + styles.ourObjectiveContactButton}>FALE CONOSCO</button>
+                <button className={"big-button high-emphasis-button " + styles.ourObjectiveContactButton}>FALE CONOSCO</button>
                 <p className={styles.ourObjectiveAndOurStrategyParagraph} >Para que uma Máquina de vendas funcione, temos um jeito autêntico de aplicar nossa estratégia, definidas en 3 pasos:</p>
             </div>
         </div>

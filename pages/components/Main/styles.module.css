@@ -108,48 +108,62 @@
     color: #FFF;
 }
 /* Our objective */
-.ourObjectiveContainer {
-  margin: auto;
+.ourObjectiveContainer, .ourSpecialityContainer {
+    margin: 2rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.ourObjectiveImage {
+.ourObjectiveImage, .ourSpecialityImage  {
     width: 90%;
     max-width: 700px;
     height: auto;
 }
-.ourObjectiveTextContainer {
+.ourObjectiveTextContainer, .ourSpecialityTextContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.ourObjectiveExplanationParagraph, .ourObjectiveAndOurStrategyParagraph {
-    max-width: 90%;
-    color: #FFF;
-}
-.ourObjectiveExplanationParagraph {
-    font-size: 3rem; 
+.ourObjectiveExplanationParagraph, .ourSpecialityExplanationParagraph {
+    font-size: 4rem; 
     font-weight: bold;
     text-align: center;
+    color: #FFF;
+}
+.ourObjectiveAndOurStrategyParagraph {
+    color: #FFF;
+}
+.ourSpecialityContactButton {
+    margin-left: -20%;
 }
 @media (min-width: 1500px) {
-    .ourObjectiveContainer {
+    .ourObjectiveContainer, .ourSpecialityContainer {
       flex-direction: row;
     }
-    
-    .ourObjectiveExplanationParagraph, .ourObjectiveAndOurStrategyParagraph {
-        max-width: 50%;
-        text-align: end; 
+    .ourSpecialityContainer {
+        margin: 0 4rem;
     }
-    .ourObjectiveExplanationParagraph {
-        margin-bottom: 1.5rem;
+    .ourObjectiveExplanationParagraph, 
+    .ourObjectiveAndOurStrategyParagraph,
+    .ourSpecialityExplanationParagraph, 
+    .ourSpecialityBitrixPartnership {
+        max-width: 50%;
+    }
+    .ourObjectiveExplanationParagraph, 
+    .ourObjectiveAndOurStrategyParagrap {
+        text-align: end; 
+
+    }
+    .ourSpecialityExplanationParagraph, 
+    .ourSpecialityBitrixPartnership {
+        text-align: start; 
+
     }
     
     .ourObjectiveTextContainer {
-        margin-top: -8rem;
+        margin-top: 0;
     }
     .ourObjectiveContactButton {
       margin-left: 15rem;
@@ -162,4 +176,16 @@
     width: 100%;
     max-width: 1400px;
     height: auto;
+}
+
+/* Selling Machine Implementation */
+.SellingMachineImage {
+    margin: 2rem auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Our Speciality */
+.ourSpecialityExplanationParagraph, .ourSpecialityBitrixPartnership {
+    color: #FFF;
 }

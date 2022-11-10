@@ -15,7 +15,7 @@ const Introduction = () => {
               <p className={styles.mainIntroductionMessageText}>
               VAMOS LEVAR SUA EMPRESA PARA O PRÓXIMO NÍVEL
               </p>
-              <button className='button high-emphasis-button'>
+              <button className='big-button high-emphasis-button'>
                   ENTRE EM CONTATO
               </button>
           </div>
