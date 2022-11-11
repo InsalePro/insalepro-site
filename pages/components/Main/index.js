@@ -10,6 +10,7 @@ import WhoWeAre from './components/WhoWeAre';
 import OurClients from './components/OurClients';
 import OurObjective from './components/OurObjective'; 
 import OurSpeciality from './components/OurSpeciality';
+import BitrixIntroductionVideo from './components/BitrixIntroductionVideo';
 
 // I'm still working on this component
 
@@ -23,6 +24,7 @@ const Main = () => {
       <Image className={styles.ourRocketStrategyImage} src={ourRocketStrategyImage} alt="Our rocket strategy" />
       <Image className={styles.SellingMachineImage} src={ SellingMachineImage } alt="People working together" />
       <OurSpeciality />
+      <BitrixIntroductionVideo />
     </main>
   );
 };

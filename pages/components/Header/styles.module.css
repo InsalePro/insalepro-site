@@ -5,6 +5,11 @@
   height: 5rem;
   max-width: 100%;
   background: var(--navbar-bgColor);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
 }
 
 .headerNav {
