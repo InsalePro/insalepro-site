@@ -4,10 +4,16 @@ import styles from '../styles.module.css';
 import introductionImage from '../../../../public/images/image1.png';
 import arrowRightImage from '../../../../public/images/insalearrows.png';
 import arrowRight1Image from '../../../../public/images/insalearrows-1.png';
+import officialPartnerImage from '../../../../public/images/official-partner.svg';
 
 const Introduction = () => {
     return (
       <div id='main-introduction' className={styles.mainIntroduction}>
+          <div className={ styles.officialPartner    } >
+              <Image className={ styles.officialPartnerImage } src={ officialPartnerImage } alt="official partner" />
+              <span className={ styles.officialPartnerText }>Parceiro Oficial</span>
+              
+          </div>
           <div
               id='main-introduction-message'
               className={styles.mainIntroductionMessage}

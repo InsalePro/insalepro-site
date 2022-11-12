@@ -6,7 +6,24 @@
 .mainIntroduction {
   margin-bottom: 2rem;
 }
-
+.officialPartner {
+    margin-top: 2rem;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding-bottom: 1rem;
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blue;
+}
+.officialPartnerImage {
+    transform: rotate(90deg);
+}
+.officialPartnerText {
+    margin-top: -4rem;
+    color: #FFF;
+}
 .mainIntroduction,
 .mainIntroductionMessage {
   display: flex;
@@ -62,6 +79,17 @@
     flex-direction: row;
     height: 100vh;
   }
+  .officialPartner {
+    width: 15rem;
+    height: 4rem;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -5.5rem;
+  }
+  .officialPartnerImage {
+    margin-top: -3.8rem;
+  }
+
   .mainIntroductionMessage {
     margin-top: 0;
     justify-content: flex-start;
