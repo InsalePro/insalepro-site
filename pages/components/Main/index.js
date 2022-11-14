@@ -1,65 +1,38 @@
 import Image from 'next/image';
 
 import styles from './styles.module.css';
-import ContactForm from './ContactForm';
 
-import introductionImage from '../../../public/images/image1.png';
-import arrowRightImage from '../../../public/images/insalearrows-1.png';
+import ourRocketStrategyImage from '../../../public/images/rocket-strategy.png';
+import SellingMachineImage from '../../../public/images/selling-machine.png';
 
-// I'm adding the '>>' to the Image
-const Introduction = () => {
-  return (
-    <div id='main-introduction' className={styles.mainIntroduction}>
-      <div
-        id='main-introduction-message'
-        className={styles.mainIntroductionMessage}
-      >
-        <p className={styles.mainIntroductionMessageText}>
-          VAMOS LEVAR SUA EMPRESA PARA O PRÓXIMO NÍVEL
-        </p>
-        <button className='button high-emphasis-button'>
-          ENTRE EM CONTATO
-        </button>
-      </div>
-      <Image
-        src={introductionImage}
-        alt='two people working together'
-        className={styles.image}
-      />
-      <div className={styles.introductionArrowsContainer}>
-        <Image
-          className={styles.mainIntroductionMessageImage1}
-          src={arrowRightImage}
-          alt='arrow right'
-        />
-        <Image
-          className={styles.mainIntroductionMessageImage2}
-          src={arrowRightImage}
-          alt='arrow right'
-        />
-      </div>
-    </div>
-  );
-};
+import Introduction from './components/Introduction';
+import WhoWeAre from './components/WhoWeAre';
+import OurClients from './components/OurClients';
+import OurObjective from './components/OurObjective';
+import OurSpeciality from './components/OurSpeciality';
+import BitrixIntroductionVideo from './components/BitrixIntroductionVideo';
 
-const WhoWeAre = () => {
-  return (
-    <p className={styles.whoWeAre}>
-      Somos um time altamente motivado e focado en gerar soluções simples e
-      escaláveis para problemas de negócios concretos. Nosso propósito é
-      organizar e simplificar procesos, atendemos pequenas e médias empresas que
-      precisam vender mais e se estruturar para crescer constantemente nos mais
-      variados segmentos de atuação.
-    </p>
-  );
-};
+// I'm still working on this component
 
 const Main = () => {
   return (
-    <main>
+    <main className={styles.main}>
       <Introduction />
       <WhoWeAre />
-      <ContactForm />
+      <OurClients />
+      <OurObjective />
+      <Image
+        className={styles.ourRocketStrategyImage}
+        src={ourRocketStrategyImage}
+        alt='Our rocket strategy'
+      />
+      <Image
+        className={styles.SellingMachineImage}
+        src={SellingMachineImage}
+        alt='People working together'
+      />
+      <OurSpeciality />
+      <BitrixIntroductionVideo />
     </main>
   );
 };

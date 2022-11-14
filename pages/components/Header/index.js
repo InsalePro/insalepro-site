@@ -38,10 +38,10 @@ const Header = () => {
           onClick={() => displayMenuHandle()}
         />
         <div id='nav-links-container' className={styles.navLinksContainer}>
-          <Link href='#about-insalepro' className={styles.navLink}>
+          <Link href='#who-we-are' className={styles.navLink}>
             A InsalePRO
           </Link>
-          <Link href='#bitrix24' className={styles.navLink}>
+          <Link href='#what-is-bitrix24' className={styles.navLink}>
             Bitrix24
           </Link>
           <Link

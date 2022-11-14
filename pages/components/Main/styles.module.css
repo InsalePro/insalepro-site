@@ -1,8 +1,29 @@
 /* Introduction */
+.main {
+    display: flex;
+    flex-direction: column;
+}
 .mainIntroduction {
   margin-bottom: 2rem;
 }
-
+.officialPartner {
+    margin-top: 2rem;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding-bottom: 1rem;
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blue;
+}
+.officialPartnerImage {
+    transform: rotate(90deg);
+}
+.officialPartnerText {
+    margin-top: -4rem;
+    color: #FFF;
+}
 .mainIntroduction,
 .mainIntroductionMessage {
   display: flex;
@@ -36,18 +57,19 @@
   display: none;
 }
 .mainIntroductionMessageImage1, .mainIntroductionMessageImage2 {
-  max-width: 15rem;
   height: auto;
   position: absolute;
-  top: 5rem;
+  top: -.1rem;
   height: 94vh;
 }
 .mainIntroductionMessageImage1 {  
-  right: 20%;
+  right: 10%;
+  max-width: 30rem;
 }
 .mainIntroductionMessageImage2 {  
-  right: 0;
+  right: -1rem;
   z-index: 1;
+  max-width: 20rem;
 }
 
 @media (min-width: 1020px) {
@@ -57,6 +79,17 @@
     flex-direction: row;
     height: 100vh;
   }
+  .officialPartner {
+    width: 15rem;
+    height: 4rem;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -5.5rem;
+  }
+  .officialPartnerImage {
+    margin-top: -3.8rem;
+  }
+
   .mainIntroductionMessage {
     margin-top: 0;
     justify-content: flex-start;
@@ -71,11 +104,180 @@
 
 /* WhoWeAre */
 .whoWeAre {
+  margin: auto;
+  padding: 0 1rem;
   color: #FFF;
   text-align: center;
   max-width: 35rem;
-  position: relative;
-  top: -2rem;
-  left: 33VW;
-  z-index: 1;
+}
+
+
+@media (min-width: 1020px) {
+    .whoWeAre {
+        position: relative;
+    } 
+}
+
+/* Our Clients */
+.ourClientsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ourClientsImage {
+    margin-top: 5rem;
+    border-radius: .5rem;
+    padding: 1rem 2rem;
+    max-width: 90%;
+    background-color: #FFF;
+}
+.ourClientsParagraph {
+    margin-bottom: 5rem;
+    color: #FFF;
+}
+/* Our objective */
+.ourObjectiveContainer, .ourSpecialityContainer {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ourObjectiveImage, .ourSpecialityImage  {
+    width: 90%;
+    max-width: 700px;
+    height: auto;
+}
+.ourObjectiveTextContainer, .ourSpecialityTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ourObjectiveExplanationParagraph, .ourSpecialityExplanationParagraph {
+    font-size: 4rem; 
+    font-weight: bold;
+    text-align: center;
+    color: #FFF;
+}
+.ourObjectiveAndOurStrategyParagraph {
+    color: #FFF;
+}
+.ourSpecialityContactButton {
+    margin-left: -20%;
+}
+@media (min-width: 1500px) {
+    .ourObjectiveContainer, .ourSpecialityContainer {
+      flex-direction: row;
+    }
+    .ourSpecialityContainer {
+        margin: 0 4rem;
+    }
+    .ourObjectiveExplanationParagraph, 
+    .ourObjectiveAndOurStrategyParagraph,
+    .ourSpecialityExplanationParagraph, 
+    .ourSpecialityBitrixPartnership {
+        max-width: 50%;
+    }
+    .ourObjectiveExplanationParagraph, 
+    .ourObjectiveAndOurStrategyParagrap {
+        text-align: end; 
+
+    }
+    .ourSpecialityExplanationParagraph, 
+    .ourSpecialityBitrixPartnership {
+        text-align: start; 
+
+    }
+    
+    .ourObjectiveTextContainer {
+        margin-top: 0;
+    }
+    .ourObjectiveContactButton {
+      margin-left: 15rem;
+    }
+}
+
+/* Our RocketStrategy */
+.ourRocketStrategyImage {
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+}
+
+/* Selling Machine Implementation */
+.SellingMachineImage {
+    margin: 2rem auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Our Speciality */
+.ourSpecialityExplanationParagraph, .ourSpecialityBitrixPartnership {
+    color: #FFF;
+}
+
+/* videoDemonstration */
+.BitrixIntroductionVideoContainer {
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title {
+    margin: 1rem 2rem;
+    font-size: 4rem;
+}
+.blueText, .whiteText {
+    text-align: center;
+}
+.blueText {
+    color: blue;
+}
+.whiteText {
+    color: #FFF;
+}
+.whiteBackground {
+    padding: 1rem 2rem;
+    background-color: #FFF;
+}
+.BitrixIntroductionVideoParagraph {
+    max-width: 900px;
+    font-size: 1.5rem;
+}
+
+.videoDemonstrationContainer {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+}
+.videoDemonstration {
+    width: 100%; 
+    height: auto; 
+    max-width: 949px;
+}
+.videoDemonstrationButtonsContainer {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+.videoDemonstrationButton {
+    margin: 0 1rem;
+    background-color: blue;
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+@media (min-width: 1020px) {
+  .whiteBackground {
+    padding: 1rem 20rem;
+  }
+    .videoDemonstration {
+        width: 949px; 
+        height: 534px; 
+    }
 }

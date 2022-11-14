@@ -25,14 +25,30 @@ a {
   box-sizing: border-box;
 }
 
+/* General classes */
+.justify-self-end {
+    justify-self: flex-end;
+}
+.justify-self-end {
+    align-self: flex-end;
+}
+.m-l-15 {
+    margin-left: 15rem;
+}
+
 /*** COMPONENTS ***/
 
 /* Buttons */
+.button, .big-button {
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
 .button {
-  border: none;
-  border-radius: 6px;
-  padding: 0.75rem 1.5rem;
-  cursor: pointer;
+    padding: 0.75rem 1.5rem;
+}
+.big-button {
+    padding: 1.5rem 3rem;
 }
 .high-emphasis-button {
   background-color: var(--green);
