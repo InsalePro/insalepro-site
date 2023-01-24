@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Outfit:wght@400;600&display=swap');
+
+.container {
+  background-color: #0e0e0e;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  padding: 8rem;
+
+  h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+
+    line-height: 6rem;
+  }
+
+  button {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    width: 14rem;
+    height: 4rem;
+
+    border: none;
+    border-radius: 5px;
+  }
+}

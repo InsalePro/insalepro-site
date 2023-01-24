@@ -11,6 +11,10 @@ import OurClients from './components/OurClients';
 import OurObjective from './components/OurObjective';
 import OurSpeciality from './components/OurSpeciality';
 import BitrixIntroductionVideo from './components/BitrixIntroductionVideo';
+import ApplyNow from './components/ApplyNow';
+import OurPlans from './components/OurPlans';
+import JoinUs from './components/JoinUs';
+import ContactForm from './components/ContactForm';
 
 // I'm still working on this component
 
@@ -33,6 +37,10 @@ const Main = () => {
       />
       <OurSpeciality />
       <BitrixIntroductionVideo />
+      <ApplyNow />
+      <OurPlans />
+      <JoinUs />
+      <ContactForm />
     </main>
   );
 };

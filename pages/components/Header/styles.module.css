@@ -1,8 +1,10 @@
 .header {
+  font-weight: 600;
+  font-size: 1.3rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  height: 5rem;
+  height: 7rem;
   max-width: 100%;
   background: var(--navbar-bgColor);
   position: fixed;
