@@ -1,9 +1,9 @@
-import styles from '../styles.module.css';
+import styles from './styles.module.scss';
 
 const WhoWeAre = () => {
   return (
-    <p id='who-we-are' className={styles.whoWeAre}>
-      Somos um time altamente motivado e focado en gerar soluções simples e
+    <p className={styles.container}>
+      Somos um time altamente motivado e focado em gerar soluções simples e
       escaláveis para problemas de negócios concretos. Nosso propósito é
       organizar e simplificar procesos, atendemos pequenas e médias empresas que
       precisam vender mais e se estruturar para crescer constantemente nos mais

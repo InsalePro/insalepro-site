@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Outfit:wght@400;600&display=swap');
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.objective {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-align: right;
+  margin-right: 16rem;
+  width: 100%;
+}
+
+.objective h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 4.5rem;
+  line-height: 5rem;
+  letter-spacing: 0;
+}
+
+.objective p {
+  font-family: 'Outfit', sans-serif;
+  margin: 2rem 0 !important;
+}

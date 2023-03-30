@@ -10,12 +10,7 @@ const OurSpeciality = () => {
         <p className={styles.ourSpecialityExplanationParagraph}>
           SOMOS ESPECIALISTAS EM BITRIX24
         </p>
-        <button
-          className={
-            'big-button high-emphasis-button ' +
-            styles.ourSpecialityContactButton
-          }
-        >
+        <button className='mainButton high-emphasis-button'>
           FALE CONOSCO
         </button>
         <p className={styles.ourSpecialityBitrixPartnership}>

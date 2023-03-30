@@ -49,9 +49,25 @@ function ContactForm() {
           </div>
 
           <div className={styles.formContent}>
-            <form action='' className={styles.form}>
-              (Formulário Bitrix24)
-            </form>
+            <div action='' className={styles.form}>
+              {typeof document !== 'undefined' && (
+                <script
+                  data-b24-form='inline/11/n9r51y'
+                  data-skip-moving='true'
+                >
+                  {(function () {
+                    var s = document.createElement('script');
+                    s.async = true;
+                    s.src =
+                      'https://cdn.bitrix24.com/b16033663/crm/form/loader_11.js' +
+                      '?' +
+                      ((Date.now() / 180000) | 0);
+                    var h = document.getElementsByTagName('script')[0];
+                    h.parentNode.insertBefore(s, h);
+                  })()}
+                </script>
+              )}
+            </div>
           </div>
         </div>
       </div>

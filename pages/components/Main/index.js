@@ -16,8 +16,6 @@ import OurPlans from './components/OurPlans';
 import JoinUs from './components/JoinUs';
 import ContactForm from './components/ContactForm';
 
-// I'm still working on this component
-
 const Main = () => {
   return (
     <main className={styles.main}>

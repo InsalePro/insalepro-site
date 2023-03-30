@@ -6,7 +6,7 @@ function JoinUs() {
       <h1>
         JUNTE-SE A NÓS <br /> E A BITRIX24 HOJE!
       </h1>
-      <button className='high-emphasis-button'>FALE CONOSCO</button>
+      <button className='mainButton high-emphasis-button'>FALE CONOSCO</button>
     </div>
   );
 }
