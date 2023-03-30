@@ -22,9 +22,9 @@ const Introduction = () => {
         className={styles.mainIntroductionMessage}
       >
         <p className={styles.mainIntroductionMessageText}>
-          VAMOS LEVAR SUA EMPRESA PARA O PRÓXIMO NÍVEL
+          VAMOS LEVAR <br /> SUA EMPRESA <br /> PARA O <br /> PRÓXIMO NÍVEL
         </p>
-        <button className='big-button high-emphasis-button'>
+        <button className='mainButton high-emphasis-button'>
           ENTRE EM CONTATO
         </button>
       </div>

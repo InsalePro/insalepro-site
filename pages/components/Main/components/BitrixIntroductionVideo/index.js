@@ -1,4 +1,4 @@
-import styles from '../styles.module.css';
+import styles from '../../styles.module.css';
 
 const BitrixIntroductionVideo = () => {
   // still working on it
@@ -31,8 +31,8 @@ const BitrixIntroductionVideo = () => {
       <div className={styles.videoDemonstrationContainer}>
         <iframe
           className={styles.videoDemonstration}
-          src='https://www.youtube.com/embed/q1J-rvY0HtU'
-          title='Bitrix24 - espaço de trabalho on-line com mais de 35 ferramentas'
+          src='https://www.youtube.com/embed/1Bp9A4xfeg0'
+          title='O que é Bitrix24 | Saiba tudo sobre a plataforma de gestão'
           frameborder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
           allowfullscreen

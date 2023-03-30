@@ -6,11 +6,9 @@ import ourClientsImage from '../../../../public/images/clients.png';
 const OurClients = () => {
   return (
     <div className={styles.ourClientsContainer}>
-      <Image
-        className={styles.ourClientsImage}
-        src={ourClientsImage}
-        alt='Our clients'
-      />
+      <div className={styles.ourClientsImageContainer}>
+        <Image src={ourClientsImage} alt='Our clients' />
+      </div>
       <p className={styles.ourClientsParagraph}>
         ADORADO POR NOSSOS CLIENTES ❤️
       </p>

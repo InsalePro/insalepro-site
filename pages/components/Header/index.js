@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import styles from '../Header/styles.module.css';
+import styles from './styles.module.css';
 import logo1 from '../../../public/images/logo1.png';
 import menuIcon from '../Header/icons/menu.svg';
 import { useEffect, useRef, useState } from 'react';
